@@ -237,5 +237,10 @@
       <item valueDataType="string" value="%22MainScene%22" name="18"/>
     </item>
   </item>
-  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="IsTouchDownEvent" callName="isTouchDown" isTrigger="false" target="Touch"/>
+    <item type="action" persistent="false" callTarget="instance" callName="simulateControl" target="AISprite696" behaviorName="横轴跑酷">
+      <item valueDataType="number" value="2" name="ctrl"/>
+    </item>
+  </item>
 </eventSheets>

@@ -5,7 +5,7 @@
   <item type="variable" variableName="GAMEOVER" variableType="number" initValue="0"/>
   <item type="variable" variableName="MARK" variableType="number" initValue="0"/>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
-    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="AISprite690"/>
+    <item type="condition" callTarget="instance" paramsClass="OnTouchTapEvent" callName="onTouchTap" isTrigger="true" target="Touch"/>
     <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
       <item valueDataType="string" value="%22MainScene%22" name="18"/>
     </item>
