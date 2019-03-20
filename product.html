@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://www.oneplus.com/cn/6?from=head -->
+<html lang="cn" class="no-js pc " from="CMS:Overseas2cn"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script charset="utf-8" src="./product_files/v.js.下载"></script><script src="./product_files/hm.js.下载"></script><script type="text/javascript" async="" src="./product_files/opdcV2.min.js.下载"></script><script>(function(){function CGCzh() {
+  //<![CDATA[
+  window.ZUeIrOo = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.dddLAoV = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+  
+  if (!['http:', 'https:'].includes(window.location.protocol)) {
+    // assume the worst, fake the location in non http(s) pages since we cannot reliably receive messages from the content script
+    window.FCIMB = true;
+    window.fwTGe = 38.883333;
+    window.icubY = -77.000;
+  }
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.FCIMB !== 'undefined')) {
+      if (window.FCIMB === true) {
+        window.JUrAuML({
+          coords: {
+            latitude: window.fwTGe,
+            longitude: window.icubY,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.ZUeIrOo(window.JUrAuML, window.ypDPPlL, window.amQpU);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.FCIMB !== 'undefined')) {
+      if (window.FCIMB === true) {
+        navigator.getCurrentPosition(window.pMkbnyQ, window.jISVlNZ, window.bIfrU);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.dddLAoV(window.pMkbnyQ, window.jISVlNZ, window.bIfrU);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.JUrAuML = successCallback;
+    window.ypDPPlL = errorCallback;
+    window.amQpU = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.pMkbnyQ = successCallback;
+    window.jISVlNZ = errorCallback;
+    window.bIfrU = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${CGCzh}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  Object.freeze(navigator.geolocation);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'oqCLdmO':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.fwTGe = message.info.coords.lat;
+          window.icubY = message.info.coords.lon;
+          window.FCIMB = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}CGCzh();})()</script>
+  
+  <title>BS01| 全速旗舰</title>
+  <meta name="keywords" content="OnePlu">
+  <meta name="description" content="全速旗舰OnePlu，搭载骁龙845，最高8GB+256GB存储组合，2倍速AI双摄，6.28英寸19:9超大视野全面屏，3D曲面玻璃，面部解锁，除震撼配置之外，欢迎登录官网购买。">
+  <!--[if lte IE 9]>
+  <script>if(location.pathname != "/upgrade/browser")location.href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html";</script>
+  <![endif]-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="full-screen" content="no">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="x5-page-mode" content="app">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="renderer" content="webkit">
+  <meta name="referrer" content="always">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta property="og:title" content="BS01 | 全速旗舰">
+<meta property="og:description" content="全速旗舰BS01，搭载骁龙845，最高8GB+256GB存储组合，2倍速AI双摄，6.28英寸19:9超大视野全面屏，3D曲面玻璃，面部解锁，除震撼配置之外，更有漫威复仇者联盟限量版发售，欢迎登录官网购买。">
+  <script>
+    window.op = window.op || {}; window.op.initTime = new Date();
+    document.documentElement.className += op.isMobile ? ' mobile ' : ' pc ';
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://statics.ocn/ov/aso?20190319065511">
+  <link href="./product_files/vendor.css" rel="stylesheet">
+  <link href="./product_files/index.css" rel="stylesheet">
+
+  
+<link rel="stylesheet" type="text/css" href="./product_files/215.css"><script charset="utf-8" src="./product_files/215.js.下载"></script></head>
+
+<body class="account-page">
+<!--<img src="https://statics.oneplus.cn/v2/img/oneplus3t/weixin.jpg?20190319065511" style="position:absolute;top: -5000px; width: 100px; height: 100px; overflow: hidden;" alt="">-->
+
+<div class="oneplus-store-cn">
+  <input type="hidden" id="_india_host" value="https://www.oneplus.in">
+  <input type="hidden" id="_net_host" value="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html">
+  <input type="hidden" id="_cn_host" value="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html">
+  <input id="mark-currency-format" type="hidden" value="%7B%22pattern%22%3A%22%C2%A5%25s%22%2C%22precision%22%3A2%2C%22requiredPrecision%22%3A2%2C%22decimalSymbol%22%3A%22.%22%2C%22groupSymbol%22%3A%22%2C%22%2C%22groupLength%22%3A3%2C%22integerRequired%22%3A1%7D">
+  <input type="hidden" name="api-sign-in" id="api-sign-in" value="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html">
+  <input type="hidden" name="link-sign-in" id="link-sign-in" value="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html">
+  <input type="hidden" name="link-user-center" id="link-user-center" value="C:\Users\PP\Desktop\BS-Website\BS-Website\product.htmlcn/customer/info">
+  <input type="hidden" name="link-home" id="link-home" value="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html">
+  <input type="hidden" name="mark-current-store" id="mark-current-store" value="cn">
+  <input type="hidden" id="assets-public-path" name="assets-public-path" value="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html">
+  <input type="hidden" name="bag-cart-products" id="bag-cart-products" value="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html">
+
+  <input type="hidden" name="verify-oneplusid-url" id="verify-oneplusid-url" value="https://account.oneplus.com/cn/isLogin">
+  <input type="hidden" name="aliverify-js" id="aliverify-js" value="https://g.alicdn.com/sd/ncpc/nc.js?20190319065511">
+  <input type="hidden" name="aliverify-link" id="aliverify-link" value="https://g.alicdn.com/sd/ncpc/nc.css?20190319065511">
+  <input type="hidden" name="aliverify-url" id="aliverify-url" value="https://account.oneplus.com/cn/getAliyunAppKey">
+  <input type="hidden" name="one-cn-login-sign-in-url" id="one-cn-login-sign-in-url" value="https://account.oneplus.com/cn/onepluslogin">
+  <input type="hidden" name="one-cn-login-send-bind-code" id="one-cn-login-send-bind-code" value="https://account.oneplus.com/cn/code/get/bind">
+  <input type="hidden" name="one-cn-login-login-bind-url" id="one-cn-login-login-bind-url" value="https://account.oneplus.com/cn/login/bind">
+  <input type="hidden" name="one-cn-login-bind-oneplus-account" id="one-cn-login-bind-oneplus-account" value="https://account.oneplus.com/cn/unionlogin/bind/user">
+  <input type="hidden" name="one-cn-login-send-bind-code-third" id="one-cn-login-send-bind-code-third" value="https://account.oneplus.com/cn/code/get/register/union">
+  <input type="hidden" name="one-cn-login-login-bind-url-third" id="one-cn-login-login-bind-url-third" value="https://account.oneplus.com/cn/unionlogin/bind/mobile">
+  <input type="hidden" name="one-cn-login-account-register-url-third" id="one-cn-login-account-register-url-third" value="https://account.oneplus.com/cn/unionlogin/register">
+  <input type="hidden" name="one-cn-login-verify-code-third" id="one-cn-login-verify-code-third" value="https://account.oneplus.com/cn/code/verify/register/union">
+  <input type="hidden" name="one-cn-code-login-sign-in-url" id="one-cn-code-login-sign-in-url" value="https://account.oneplus.com/cn/login/sms">
+  <input type="hidden" name="one-cn-send-msg-code-url" id="one-cn-send-msg-code-url" value="https://account.oneplus.com/cn/code/get/login">
+  <input type="hidden" name="one-cn-login-verify-mode" id="one-cn-login-verify-mode" value="https://account.oneplus.com/cn/code/getVerifyMode">
+  <input type="hidden" name="one-cn-login-verify-image" id="one-cn-login-verify-image" value="https://account.oneplus.com/cn/getVerifyImage">
+  <input type="hidden" name="aliverify-traceless" id="aliverify-traceless" value="https://g.alicdn.com/sd/nvc/1.1.112/guide.js">
+  <input type="hidden" name="one-cn-recover-url" id="one-cn-recover-url" value="https://account.oneplus.com/cn/recover">
+  <input type="hidden" name="one-cn-recover-third-url" id="one-cn-recover-third-url" value="https://account.oneplus.com/cn/third/recover">
+
+
+  <script>
+    var oneCnLoginMobileRulesList = [{ "reg": /^1\d{10}$/ }];
+  </script>
+
+  <script type="application/json" id="one-cn-login-data-translation">
+    {
+      "signUpTitle":"登录",
+      "codeSignUpTitle":"手机短信登录",
+      "commonSignUpTitle":"用户名密码登录",
+      "loginSubmitVal": "确定",
+      "emailErrorTip":"请输入您的登录账号",
+      "emailEmptyErrorTip":"请输入您的登录账号",
+      "pwdErrorTip":"密码错误",
+      "pwdFormatErrorTip": "密码长度为6-16位",
+      "pwdEmptyErrorTip":"请输入您的登录密码",
+      "setPwdErrorTip":"请设置登录密码",
+      "phoneErrorTip": "格式不正确",
+      "telPatternErrorTip": "请输入11位手机号码",
+      "imgCodeErrorTip": "图片验证码输入错误",
+      "verifyCodePlaceholder": "请输入短信验证码",
+      "verifyErrorTip": "验证码错误",
+      "imgCodePlaceholder": "请输入图片验证码",
+      "aliverifyErrorTip": "请滑动验证码完成安全验证",
+      "loginLink":"https://account.oneplus.com/cn/login",
+      "qqUrl":"https://account.oneplus.com/cn/qqlogin",
+      "weixinUrl":"https://account.oneplus.com/cn/wxlogin",
+      "weiboUrl":"https://account.oneplus.com/cn/wblogin",
+      "forgotLink":"https://account.oneplus.com/cn/forget",
+      "signUpLink":"https://account.oneplus.com/cn/regist",
+      "agreementLink": "https://account.oneplus.com/cn/agreement",
+      "countdownTimes": 120,
+      "sendVerifyCodeSuccess": "发送成功",
+      "sendVerifyCodefaild": "发送失败",
+      "bindMobileSuccess": "绑定成功",
+      "signInTips":"选择其它方式登录",
+      "loginSuccessTips": "登录成功",
+      "loginTimeoutTips": "页面已过期",
+      "requestErrorTip":"请求失败，请稍后再尝试",
+      "defaultUrl":"https://account.oneplus.com/cn",
+      "format":{
+        "dd":"days",
+        "hh": "hour",
+        "mm": "min",
+        "ss": "s"
+      },
+      "passwordRulesTips":{
+        "lengthRule":"6 ～16 位字符",
+        "letterRule":"包含字母",
+        "numberRule":"包含数字"
+      },
+      "binding":{
+        "newPhoneText":"为了账户的安全及正常使用，请绑定你的手机号码。",
+        "sendText":"s后重新发送",
+        "nextText": "下一步",
+        "sendAgainText":"重新发送",
+        "confirmText":"确定",
+        "verifyText":"发送验证码",
+        "getVerifyText":"获取验证码",
+        "phonePre":"+86",
+        "phoneErrorTip":"请输入正确的手机号码",
+        "phoneEmptyErrorTip":"请输入您的手机号码",
+        "pwdErrorTip":"Password does not meet minimal requirements.",
+        "patternPwdErrorTip":"Password does not meet minimal requirements.",
+        "codeTips":"请输入验证码",
+        "comfirmCodeNotExistTip":"Your verification code was entered incorrectly.",
+        "comfirmCodeExpiredTip":"The confirmation code has expired.",
+        "phonePlaceHolderText":"手机号",
+        "networkError":"Network Error",
+        "successMsg":"success",
+        "bindingInfo":"注册黑羊，即表示你同意黑羊的",
+        "bindMobileInfo": "绑定手机号，即表示你同意黑羊的",
+        "bindingLink":"https://www.oneplus.com/cn",
+        "bindingLinkInfo":"用户协议",
+        "bindingOneInfo": "已经有黑羊账号？",
+        "bindingOneLinkInfo": "绑定你的黑羊账号"
+      }
+    }
+  </script>
+
+
+  <script type="application/json" id="one-cn-login-data-email-list">
+    ["@qq.com","@163.com","@126.com","@sina.com","@hotmail.com","@sohu.com","@foxmail.com","@yeah.net","@vip.qq.com","@gmail.com","@hotmail.com","@yahoo.com","@outlook.com","@yahoo.co.in","@googlemail.com","@web.de","@gmx.de","@live.com","@rediffmail.com","@hotmail.co.uk","@hotmail.fr","@yahoo.in","@hotmail.it","@ymail.com","@msn.com","@yahoo.co.uk","@mail.ru","@aol.com","@139.com","@hggame.com","@love11.com","@buston.cn","@kcidc.com","@sfba.cn","@hensao.com","@tour0.com","@ytgame.com","@pay55.com","@oneplus.net","@oneplus.cn"]
+  </script>
+
+
+  <div id="page-header"><!----> <header id="header"><div class="container-infinite overflow-visible top-header"><nav class="nav container-text"><ul class="nav-left search-collapsed"><li class="icon brand"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="ico-wrapper"><i class="ico ico-brnd"></i></a></li> <li class="icon show-menu"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" id="store-nav" data-target="#nav-pages-slide" data-trigger="#store-nav" data-nav="top" class="ico-wrapper as-show-menu collapsed"><i class="icon-show-menu"></i></a></li></ul> <ul id="nav-pages-slide" class="nav-pages collapsed"><li class="user-brief-info"><a href="https://account.oneplus.com/cn/login?jump=https%3A%2F%2Fwww.oneplus.com%2Fcn%2F6%3Ffrom%3Dhead" class="info">欢迎访问黑羊官网，请<span class="text-blue">登录</span></a></li> <li class="page"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html">BS01</a></li> <li class="page"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html">BS01</a></li> <li data-target="#family-slide" data-trigger="#family-slide-trigger" class="page"><a id="family-slide-trigger" href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" data-parent="#store-nav" data-target="#family-slide" data-trigger="#family-slide-trigger" class="family-slide-trigger collapsed">商城<i class="icon-fold"></i></a> <div class="container-infinite bg-white"><nav id="family-slide" class="family-show collapsed"><div class="container-text"><ul class="show-windows"><li class="show-window page-all"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="link-black text-normal item-link"><i class="ico ico-phone"></i> <span>所有</span></a></li> <li class="show-window"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="link-black text-normal item-link"><i class="ico ico-cat-phone"></i> <span>手机</span></a></li> <li class="show-window"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="link-black text-normal item-link"><i class="ico ico-audio"></i> <span>耳机</span></a></li> <li class="show-window"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="link-black text-normal item-link"><i class="ico ico-cases-protection"></i> <span>壳/膜</span></a></li> <li class="show-window"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="link-black text-normal item-link"><i class="ico ico-power-cables"></i> <span>适配器/数据线</span></a></li> <li class="show-window"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="link-black text-normal item-link"><i class="ico ico-bundles"></i> <span>套装</span></a></li> <li class="show-window"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="link-black text-normal item-link"><i class="ico ico-gear"></i> <span>生活馆</span></a></li></ul></div></nav></div></li> <li class="page"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" onclick="_opq.push([&#39;trackEvent&#39;,&#39;TD_Head_5G&#39;,&#39;5g&#39;])">5G</a></li> <li class="page"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" onclick="_opq.push([&#39;trackEvent&#39;,&#39;opcn_T106&#39;,&#39;品牌&#39;])">品牌</a></li> <li class="page"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" onclick="_opq.push([&#39;trackEvent&#39;,&#39;opcn_T103&#39;,&#39;服务&#39;])">服务</a></li> <li class="page"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" onclick="_opq.push([&#39;trackEvent&#39;,&#39;opcn_T104&#39;,&#39;论坛&#39;])" target="_blank">论坛</a></li></ul></div></nav></div></header> <div class="misc-dialog hidden"><div class="cover"><div class="hint-card" style="display: none;"><div class="card-header"><!----> <a href="javascript:;" class="close-hint"></a></div> <!----> <!----></div></div></div> <div class="misc-dialog hidden err-msg"><div class="cover"><div class="hint-card" style="display: none;"><div class="card-header"><!----> <a href="javascript:;" class="close-hint"></a></div> <!----> <!----></div></div></div> <!----> <div class="misc-dialog hidden"><div class="cover"><div class="hint-card" style="display: none;"><div class="card-header"><!----> <a href="javascript:;" class="close-hint"></a></div> <!----> <!----></div></div></div></div>
+
+</div>
+
+<!-- <link rel="stylesheet" type="text/css" href="https://statics.oneplus.cn/v2/css/common/common_pc.css?20190319065511">
+<script src="https://statics.oneplus.cn/v2/core.js?20190319065511" id="oneplusjs" updatelist="*" update="20190319065511"></script> -->
+<style>
+
+}
+  video {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .special-topic .unit-wrapper .title {
+    font-family: SlateForOnePlusRegular, MYingHeiW5, Microsoft Yahei;
+  }
+
+  .special-topic .unit-wrapper .sub-title {
+    font-family: SlateForOnePlusRegular, MYingHeiW5, Microsoft Yahei;
+  }
+
+  .special-topic .unit-wrapper .pg-title {
+    font-family: SlateForOnePlusRegular, MYingHeiW4, Microsoft Yahei;
+    font-size: 400;
+  }
+
+  .overview-container .red-phone{
+    width: 100%;
+    padding-bottom: 4%;
+  }
+  .overview-red .red-phone .view-img{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .red-phone .right-wrapper .title-img img,.red-phone .unit-wrapper .title-img img{
+    height: 100%;
+  }
+  .red-phone .right-wrapper .title-img,.red-phone .unit-wrapper .title-img {
+    width: 100%;
+    max-width: 450px;
+    height: 32px;
+    margin: auto;
+  }
+
+  .red-phone .unit-wrapper .text {
+    font-family: SlateForOnePlusRegular, MYingHeiW4, Microsoft Yahei;
+    font-size: 35px;
+  }
+
+  .red-phone .unit-wrapper .sale-time,
+  .overview-section .unit-wrapper .sale-time {
+    font-family: SlateForOnePlusRegular,  Microsoft Yahei;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .red-phone .notify-btn{
+    min-width: 200px;
+    font-family: SlateForOnePlusRegular, Microsoft Yahei;
+    font-weight:normal;
+  }
+
+  .overview-red .design-detail .choose-red {
+    width: 46%;
+  }
+
+  .overview-red .red-title,
+  .red-phone .red-title .red {
+    font-size: 60px;
+    font-weight: normal;
+    white-space: nowrap;
+    font-family: SlateForOnePlusRegular, MYingHeiW5, Microsoft Yahei;
+  }
+
+  .overview-red .video-preview .video-parallax .one-parallax {
+    padding-bottom: 38%;
+  }
+  .special-topic .great-design .design-parallax .parallax-view {
+    /*background: #E9E4E1;*/
+  }
+
+  .special-topic .great-design .design-parallax .parallax-view .bg-container {
+    /*background: #E9E4E1;*/
+  }
+
+  .design-parallax .one-parallax .parallax-view .bg-container img {
+    transform: translate3d(0, 0, 0) scale(1.2);
+    transform-origin: 50%;
+  }
+
+  .overview-red .red_color_4 {
+    width: 90%;
+    max-width: 1100px;
+  }
+
+  .detail-pages .design-parallax .one-parallax .parallax-view .bg-container {
+    transition: all 1s ease;
+  }
+
+  .detail-pages .design-parallax .one-parallax .parallax-view .bg-container img {
+    transition: all 1s ease;
+  }
+
+  /*.expand-ani .design-parallax .one-parallax .parallax-view .bg-container img {
+    transform: scale(1);
+  }
+
+  .expand-ani .design-parallax .one-parallax .parallax-view .bg-container {
+    transform: translate3d(0px, -5%, 0px) !important;
+  }*/
+
+  @media screen and (max-width:1560px) {
+
+    .overview-red .video-preview .video-parallax .one-parallax {
+      padding-bottom: 35%;
+    }
+  }
+
+  @media screen and (max-width:1067px) {
+    .red-phone .right-wrapper .title-img,.red-phone .unit-wrapper .title-img {
+      height: 28px;
+    }
+    .overview-red .red-title,
+    .red-phone .red-title .red {
+      font-size: 40px;
+      font-weight: 800;
+    }
+    .red-phone .unit-wrapper .text {
+      font-size: 28px;
+    }
+  }
+
+  @media screen and (max-width: 736px) {
+    .special-topic .close-detail-btn.appear {
+      transform: translate3d(0,125px,0);
+    }
+    .overview-container .red-phone {
+      padding: 80px 0 0;
+      padding-bottom: 20%;
+    }
+
+    .red-phone .right-wrapper .title-img,.red-phone .unit-wrapper .title-img {
+      height: 20px;
+    }
+    .overview-red .red-title,
+    .red-phone .red-title .red {
+      font-size: 32px;
+      font-weight: 800;
+    }
+
+    .red-phone .unit-wrapper .text {
+      font-size: 24px;
+    }
+
+    .red-phone .unit-wrapper .sale-time,
+    .overview-section .unit-wrapper .sale-time {
+      font-size: 18px;
+    }
+
+    .overview-red .design-detail .choose-red {
+      width: 100%;
+    }
+
+    .overview-red .video-preview .visible-view .player {
+      height: 33%;
+    }
+
+
+    /*.expand-ani .design-parallax .one-parallax .parallax-view .bg-container {
+      transform: translate3d(0px, -25%, 0px) !important;
+    }*/
+  }
+
+  @media screen and (max-width: 550px) {
+    .special-topic .detail-title {
+      top: 100px;
+    }
+    .expand-ani .design-parallax .one-parallax .parallax-view .bg-container {
+      transform: translate3d(0px, 5%, 0px) !important;
+    }
+    .red-phone .unit-wrapper .sale-time {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    /*.expand-ani .design-parallax .one-parallax .parallax-view .bg-container {
+      transform: translate3d(0px, -10%, 0px) !important;
+    }*/
+  }
+
+  @media screen and (max-width: 360px) {
+    /*.expand-ani .design-parallax .one-parallax .parallax-view .bg-container {
+      transform: translate3d(0px, -5%, 0px) !important;
+    }*/
+  }
+
+.special-topic>.local-nav .nav-wrapper .nav-content .nav-drop-list ul {
+    background-color: black;
+    padding: 0 8%;
+    height: 50px;
+}
+
+.special-topic>.local-nav .nav-wrapper .nav-content .nav-drop-list ul li a {
+  padding: 0;
+}
+
+.special-topic>.local-nav .nav-wrapper .nav-content .nav-drop-list {
+    position: relative;
+}
+
+  .special-topic>.local-nav .nav-wrapper .nav-content .nav-drop-list:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color:black(0,0,0,.1);
+    z-index: 1;
+}
+
+@media not all, (-webkit-min-device-pixel-ratio: 1.5), not all, not all
+.special-topic>.local-nav .nav-wrapper .nav-content .nav-drop-list:after {
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+  /*--------red phone style end----------*/
+</style>
+
+<style>
+  .ui-dialog-title{
+    font-family: SlateForOnePlusRegular, MYingHeiW5, Microsoft Yahei;
+  }
+
+  .input-phone .input-div{
+    box-sizing: content-box;
+  }
+.entry-text{
+   font-size:20px;
+   color:#eb0028;
+}
+@media screen and (max-width:768px){
+   font-size:14px;
+}
+.special-topic>.local-nav .nav-wrapper .nav-content .nav-list ul.menu-list>li>a { color: #000; opacity: .5; line-height: 1; transition: all .3s ease; }
+.special-topic>.local-nav .nav-wrapper .nav-content .nav-list ul.menu-list>li>a.active, .special-topic>.local-nav .nav-wrapper .nav-content .nav-list ul.menu-list>li>a.title, .special-topic>.local-nav .nav-wrapper .nav-content .nav-list ul.menu-list>li>a:hover {
+    opacity: 1;
+}
+</style>
+<main role="main" id="main-section" class="main-section body-index special-topic"><nav class="local-nav"><div class="nav-wrapper"><div class="nav-background"></div> <div class="nav-content"><div class="container-text"><div class="nav-list flex flex-content-between flex-align-center"><h1 class="text-base m-r text-black title">BS01</h1> <div class="flex actions"><ul class="menu-list flex flex-align-center m-r"><li class="hidden-xs"><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="text-sm m-r text-stronger active">概述</a></li></ul> <a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" data-retry="Retrying" class="buy-btn one-button btn-red text-base text-center one-button btn-red frozen" style="font-size: 16px;">购买 <!----></a></div></div> <div class="menu-icon hidden"><div class="menu-top"></div> <div class="menu-bottom"></div></div> <div class="nav-drop-list hidden-not-xs"><ul class="flex flex-align-center flex-content-between"><li><a href="https://www.oneplus.com/cn/6" class="text-sm text-stronger active">概述</a></li> <li><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="text-sm text-stronger">参数</a></li> <li><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="text-sm text-stronger">体验</a></li> <li><a href="C:\Users\PP\Desktop\BS-Website\BS-Website\product.html" class="text-sm text-stronger">评价</a></li></ul></div></div></div></div></nav> <div id="overview" class="overview-container overview-red"><div class="close-detail-btn ico ico-close"></div> <section class="overview-section"><section><div class="overview-header p-b-lg"><div class="unit-wrapper animated-box animated"><div class="title-img ant1"><img src="./product_files/title_cn.svg" alt=""></div> <p class="text text-center h1 m-t text-black ant2 break-all" style="word-break: break-all;"><span style="font-weight: normal; font-family: SlateForOnePlusRegular, &quot;Microsoft Yahei&quot;;">￥2799 起</span> <span class="text-base"></span></p> <div class="view-img p-t-lg ant3"><img data-src="https://image01.oneplus.cn/shop/201805/21/283/1.png" alt="" class="lazyload op-loaded" src="./product_files/1.png"></div></div></div></section> <section><div class="video-preview"><div class="video-parallax tilt-top-in tilt-bottom-in"><div class="one-parallax"><div class=""><div class="parallax-layer parallax-view"><div class="bg-container" style="transform: translate3d(0px, -150px, 0px);"><img data-src="https://image01.oneplus.cn/shop/201806/30/422/11467679c60c2916517a7848c19ffa7c.jpg" class="lazyload op-loaded" src="./product_files/11467679c60c2916517a7848c19ffa7c.jpg"></div></div> <div class="parallax-layer image-view" style="transform: translate3d(0px, 0px, 0px);"><div class="parallax-layer visible-view flex-not-xs"><div class="left-player player col-1"></div></div></div></div></div></div></div></section></section> <section class="fast-section p-t-lg"><div class="common-detail fast-detail"><div class="fast-smooth as-top-trans"><div class="title-content animated-box as-title-content"><div class="unit-wrapper max-width-sm p-t-lg p-b text-center-not-xs"><div class="title text-black text-gradient ant1">性能 &amp; 体验</div> <div class="sub-title text-black text-gradient ant2">够强劲，才尽兴。</div> <div class="text text-black m-t ant3">全新 BS01 搭载骁龙™ 845，性能比上一代提升 30%。最高 8GB 四通道 LPDDR4X 大内存+256GB UFS2.1 双通道超大闪存*，App 运行更流畅。令人羡慕的强悍配置之外，还对
+                  50 余款热门游戏进行特别优化，让你的游戏体验，更畅快，更尽兴。</div> <div class="learn-more text-black m-t ant4"><a href="javascript:;">了解更多</a></div></div></div> <div class="sub-section as-sub-section"><div class="sub-content as-sub-content"><div class="detail-bg-gray top-content tilt-top-in as-tilt"><div class="detail-title unit-wrapper max-width-sm p-t-sm p-b-lg text-center-not-xs as-detail-title"><div class="title text-black text-gradient ant1">性能 &amp; 体验 </div> <div class="sub-title text-black text-gradient ant2">够强劲，才尽兴。</div></div> <div class="fast-view view-ani"><div class="play-games"><img data-src="./product_files/speed_light_cn.png" alt="" class="lazyload"></div> <div class="margin-1x"></div> <div class="unit-wrapper max-width-sm text-center-not-xs text-base m-t text-33">*你拥有 6GB +64GB /8GB +128GB /8GB +256GB 三种存储组合选择。</div></div></div> <!----></div></div></div></div></section> <section class="display-section"><div class="common-detail display-detail"><div class="more-screen top-height bg-ani as-top-trans"><div class="title-content animated-box as-title-content tilt-top"><div class="screen-content unit-wrapper max-width-sm p-b-lg text-center-not-xs animated-box as-unit-wrapper max-width-sm"><div class="title text-black text-gradient ant1">19:9 超大视野全面屏</div> <div class="sub-title text-black text-gradient ant2">将震撼，尽收眼底。</div> <div class="text text-black m-t ant2">在抛弃了前置摄像头后屏占比达到了惊人的99%，这是手机史上距离完美的全面屏最近的手机，黑羊在创造瞩目的正面的同时也去掉了手机边框上的断点，这是手机工艺上的另一个奇迹</div> <div class="learn-more text-black m-t ant4"><a href="javascript:;">了解更多</a></div></div></div> <div class="sub-section as-sub-section"><div class="sub-content as-sub-content"><div class="screen-height"><div class="detail-title unit-wrapper max-width-sm p-t-sm p-b-lg text-center-not-xs as-detail-title"><div class="title text-white ant1">19:9 超大视野全面屏</div> <div class="sub-title text-white ant2">将震撼，尽收眼底。</div></div> <div class="common-parallax display-parallax tilt-top-in tilt-bottom-in as-parallax"><div class="one-parallax"><div class=""><div class="parallax-layer parallax-view"><div class="bg-container" style="transform: translate3d(0px, 0px, 0px);"><!----></div></div> <div class="parallax-layer image-view" style="transform: translate3d(0px, 0px, 0px);"><div class="screen-positive"><img data-src="./product_files/screen_positive.png" alt="" class="lazyload"></div></div></div></div></div></div> <!----></div></div></div></div></section> <section class="camera-section"><div class="common-detail camera-detail"><div class="clear-photos top-height bg-ani as-top-trans"><div class="title-content animated-box as-title-content tilt-top"><div class="unit-wrapper max-width-sm p-t-lg p-b-lg text-center-not-xs animated-box as-unit-wrapper max-width-sm"><div class="title text-black text-gradient ant1 scale-ani title-ani">2 倍速 AI 双摄</div> <div class="sub-title text-black text-gradient ant2 scale-ani title-ani">出手即出色</div> <div class="text text-black m-t ant3 text-ani">两颗摄像头均为1/2.3英寸大底，1900万像素彩色主摄像头配备F1.8光圈，内嵌DRAM层，支持960fps得超级慢动作摄录以及4K HDR视频录制;1200万像素得黑白摄像头则是F1.6大光圈，单位像素面积达到了1.55μm，感光极其出色。</div> <div class="text-sm text-33 p-t ant3">备注：慢动作视频的拍摄帧率较高，如果在室内灯源下拍摄，由于日光灯本身的闪烁特性，视频画面可能出现闪烁效果，属正常现象。建议你在明亮的自然光环境下进行拍摄，以获得更棒的效果。</div> <div class="learn-more text-black m-t ant4 link-ani"><a href="javascript:;">了解更多</a></div></div></div> <div class="sub-section as-sub-section"><div class="sub-content as-sub-content"><div class="screen-height"><div class="detail-title unit-wrapper max-width-sm p-t-sm p-b-lg text-center-not-xs as-detail-title"><div class="title text-white ant1">2 倍速 AI 双摄</div> <div class="sub-title text-white ant2">出手即出色</div></div> <div class="common-parallax camera-parallax tilt-top-in tilt-bottom-in as-parallax"><div class="one-parallax"><div class=""><div class="parallax-layer parallax-view"><div class="bg-container" style="transform: translate3d(0px, 0px, 0px);"><!----></div></div> <div class="parallax-layer image-view" style="transform: translate3d(0px, 0px, 0px);"><div class="screen-back"><img data-src="./product_files/screen_back.png" alt="" class="lazyload"></div></div></div></div></div></div> <!----></div></div></div></div></section> <section class="design-section"><div class="common-detail design-detail"><div class="great-design top-height bg-ani as-top-trans"><div class="title-content animated-box as-title-content tilt-top"><div class="unit-wrapper max-width-sm p-t-lg p-b-lg text-center-not-xs animated-box"><div class="title text-gradient ant1">设计</div> <div class="sub-title text-gradient ant2">看着赏心悦目，用着爱不释手。</div> <div class="text text-black m-t ant3">用最顶级的摄像头进行自拍，后置屏幕不仅带了了更优秀的自拍照片，还提供快捷显示时间，备忘录等方便的功能</div> <div class="learn-more m-t ant4"><a href="javascript:;" class="text-black link-ani">了解更多</a></div></div></div> <div class="sub-section as-sub-section"><div class="sub-content as-sub-content"><div class="top-content"><div class="detail-title unit-wrapper max-width-sm p-t-sm p-b-lg text-center-not-xs as-detail-title"><div class="title text-white ant1">设计</div> <div class="sub-title text-white ant2">看着赏心悦目，用着爱不释手。</div></div> <div class="common-parallax design-parallax tilt-top-in tilt-bottom-in as-parallax"><div class="one-parallax"><div class=""><div class="parallax-layer parallax-view"><div class="bg-container" style="transform: translate3d(0px, 0px, 0px);"><img data-src="./product_files/8.png" class="lazyload"></div></div> <div class="parallax-layer image-view" style="transform: translate3d(0px, 0px, 0px);"></div></div></div></div></div> <!----></div></div></div></div></section> <!----> <section class="weather-section"><div class="common-detail weather-detail"><div class="weather-resistant top-height bg-ani as-top-trans"><div class="title-content animated-box as-title-content tilt-top"><div class="unit-wrapper max-width-sm p-t-lg p-b-lg text-center-not-xs animated-box as-unit-wrapper max-width-sm"><div class="title text-black text-gradient">生活意外防水 2.0</div> <div class="sub-title text-black text-gradient">生活的意外，从容对待。</div> <div class="text text-black m-t text-ani">40道工艺制程，193道精密工序，精心打磨的不锈钢金属边框，ip65/68防尘防水，在繁杂的工艺中保证了真正的坚固耐用</div> <div class="text-sm text-33 p-t ant3" style="font-weight: 400;">备注：BS01 支持生活防水，生活防水指可防止日常生活中因洗手、落雨等水滴泼溅导致的产品损坏，请勿将产品置于水下。生活防水性能可能会因日常磨损而下降，请勿给潮湿状态下的 BS01 充电，由于液体浸入而导致的损坏不在保修范围之内。</div> <div class="learn-more text-black m-t link-ani"><a href="javascript:;">了解更多</a></div></div></div> <div class="sub-section as-sub-section"><div class="sub-content as-sub-content"><div class="top-content"><div class="detail-title unit-wrapper max-width-sm p-t-sm p-b-lg text-center-not-xs as-detail-title"><div class="title text-white ant1">生活意外防水 2.0</div> <div class="sub-title text-white ant2">生活的意外，从容对待。</div></div> <div class="common-parallax weather-parallax tilt-top-in tilt-bottom-in as-parallax"><div class="one-parallax"><div class=""><div class="parallax-layer parallax-view"><div class="bg-container" style="transform: translate3d(0px, 0px, 0px);"><img data-src="./product_files/water.jpg" class="lazyload"></div></div> <!----></div></div></div></div> <!----></div></div></div></div></section> <section class="os-section"><div class="common-detail os-detail"><div class="oxygen-os bg-ani top-height bg-ani as-top-trans"><div class="title-content animated-box as-title-content tilt-top"><div class="unit-wrapper max-width-sm p-t-lg p-b text-center-not-xs animated-box as-unit-wrapper max-width-sm"><div class="title text-black text-gradient-brown ant1 scale-ani title-ani">H
+                  <sub class="sub-color">2</sub>OS</div> <div class="sub-title text-black text-gradient-brown ant2 scale-ani title-ani">多一点轻快，少一点负担。</div> <div class="text text-black m-t ant3 text-ani">
+                  <sub></sub>6.3英寸，18：9显示区域，去掉了讨人厌的刘海后带来的100%覆盖DCI-P3的广色域屏幕，4k的极致高清和HDR的动态显示范围，这可能是市面上最好的一块屏幕。</div> <div class="learn-more text-black m-t link-ani ant4"><a href="javascript:;">了解更多</a></div></div></div> <div class="sub-section as-sub-section"><div class="sub-content as-sub-content"><div class="top-content bg-ani tilt-top-in as-tilt"><div class="detail-title unit-wrapper max-width-sm p-t-sm p-b-lg text-center-not-xs as-detail-title"><div class="title text-black text-gradient-brown ant1 scale-ani title-ani">H
+                      <sub class="sub-color">2</sub>OS</div> </div> <div class="os-side-view container-text animated-box"><div class="view-ani side-view flex"><div class="col-1"><div class="side side-01 ant1"><img data-src="./product_files/side_03.png" alt="" class="lazyload"></div></div> <div class="col-1"><div class="side side-02 ant2"><img data-src="./product_files/side_02.png" alt="" class="lazyload"></div></div> <div class="col-1"><div class="side side-03 ant3"><img data-src="./product_files/side_03.png" alt="" class="lazyload"></div></div></div></div></div> <!----></div></div></div></div></section> <section class="bullets-section"><div class="bullets-wireless animated-box m-b-lg"><div class="unit-wrapper max-width-sm p-t-lg p-b-lg text-center-not-xs"></div></section> <div class="margin-4x"></div></div> <div class="mask-container"><div class="appear-mask as-appear-mask tilt-top"><div class="appear-from-bottom"><div class="appear-before tilt-top tilt-black"></div> <div class="appear-after tilt-top"></div></div></div></div> <div class="one-video-container hidden"><div class="close-btn"></div> <div class="video-areas"><div id="overview-player"></div></div></div></main>
+<script type="application/json" id="data-translation">
+{
+  "t9n":"t9n"
+}
+</script>
+<script>
+  var GLOABL_PARAMS = {
+    images: {
+      games: {
+        'xs': 'https://image01.oneplus.cn/shop/201805/21/842/8fead8708f1d44c1d47b315990e65538.png',
+        'md': 'https://image01.oneplus.cn/shop/201805/21/1950/da8e4c4715d1ea18a2184d123f995afa.png',
+        'lg': 'https://image01.oneplus.cn/shop/201805/21/1950/da8e4c4715d1ea18a2184d123f995afa.png'
+      },
+      person_01: {
+        'xs': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/01_640.jpg',
+        'md': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/01.jpg',
+        'lg': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/01.jpg'
+      },
+      person_02: {
+        'xs': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/02_640.jpg',
+        'md': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/02.jpg',
+        'lg': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/02.jpg'
+      },
+      person_03: {
+        'xs': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/03_640.jpg',
+        'md': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/03.jpg',
+        'lg': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/03.jpg'
+      },
+      person_04: {
+        'xs': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/04_640.jpg',
+        'md': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/04.jpg',
+        'lg': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/04.jpg'
+      },
+      power: {
+        'xs': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/power_640.jpg',
+        'md': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/power.jpg',
+        'lg': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/power.jpg'
+      },
+      screenPositive: {
+        'xs': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/screen_positive.png',
+        'md': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/screen_positive.png',
+        'lg': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/screen_positive.png'
+      },
+      screenBack: {
+        'xs': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/screen_back.png',
+        'md': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/screen_back.png',
+        'lg': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/screen_back.png'
+      },
+      top: {
+        'xs': 'https://image01.oneplus.cn/shop/201806/11/1367/343704725037bc46a21bb96a39adc176.jpg',
+        'md': 'https://image01.oneplus.cn/shop/201806/11/1367/343704725037bc46a21bb96a39adc176.jpg',
+        'lg': 'https://image01.oneplus.cn/shop/201806/11/1367/343704725037bc46a21bb96a39adc176.jpg'
+      },
+      top_01:{
+        'xs':'https://image01.oneplus.cn/shop/201805/21/1853/555dd5476e0d1d0bdfa916040026aaf4.jpg',
+        'md':'https://image01.oneplus.cn/shop/201805/21/283/958b6059181c5974e0bdf8974901eb3b.jpg',
+        'lg':'https://image01.oneplus.cn/shop/201805/21/283/958b6059181c5974e0bdf8974901eb3b.jpg'
+      },
+      top_04:{
+        'xs':'https://image01.oneplus.cn/shop/201807/05/1921/da71f98cd8531fbf83e1ec2b868c10d9.jpg',
+        'md':'https://image01.oneplus.cn/shop/201807/05/1921/da71f98cd8531fbf83e1ec2b868c10d9.jpg',
+        'lg':'https://image01.oneplus.cn/shop/201807/05/1921/da71f98cd8531fbf83e1ec2b868c10d9.jpg'
+      },
+      silkWhite: {
+        'xs': 'https://image01.oneplus.cn/shop/201805/31/625/f4a19f69328227f6988ece740e6fe5ee.jpg',
+        'md': 'https://image01.oneplus.cn/shop/201805/31/625/f4a19f69328227f6988ece740e6fe5ee.jpg',
+        'lg': 'https://image01.oneplus.cn/shop/201805/31/625/f4a19f69328227f6988ece740e6fe5ee.jpg'
+      },
+      red: {
+        'xs': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/top_red_640.jpg',
+        'md': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/top_red.jpg',
+        'lg': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/top_red.jpg'
+      },
+      designPhone: {
+        'xs': 'https://image01.oneplus.cn/shop/201805/21/342/bcd6239eee66f82de91e2c7d88f6a7d4.png',
+        'md': 'https://image01.oneplus.cn/shop/201805/21/447/ccdf4f7e47999edc401c8d840f9d3703.png',
+        'lg': 'https://image01.oneplus.cn/shop/201805/21/447/ccdf4f7e47999edc401c8d840f9d3703.png'
+      },
+      avengersPhone: {
+        'xs': 'https://image01.oneplus.cn/shop/201805/21/1280/3bb0340668c9ea57f99c8bdbfc83a495.png',
+        'md': 'https://image01.oneplus.cn/shop/201805/17/510/bd7e09d1aa57af1d3a8e8c61dd9fe6ea.png',
+        'lg': 'https://image01.oneplus.cn/shop/201805/17/510/bd7e09d1aa57af1d3a8e8c61dd9fe6ea.png'
+      },
+      familiar: {
+        'xs': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/familiar_phone_640.png',
+        'md': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/familiar_phone.png',
+        'lg': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/familiar_phone.png'
+      },
+      full: {
+        'xs': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/screen/gesture_640.png',
+        'md': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/screen/gesture.jpg',
+        'lg': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/screen/gesture.jpg'
+      }
+    },
+    bgImages: {
+      designPhone: {
+        '408w': 'https://image01.oneplus.cn/shop/201805/17/342/bcd6239eee66f82de91e2c7d88f6a7d4.png',
+        '816w': 'https://image01.oneplus.cn/shop/201805/17/342/bcd6239eee66f82de91e2c7d88f6a7d4.png',
+        '864w': 'https://image01.oneplus.cn/shop/201805/21/447/ccdf4f7e47999edc401c8d840f9d3703.png',
+        '1368w': 'https://image01.oneplus.cn/shop/201805/21/447/ccdf4f7e47999edc401c8d840f9d3703.png',
+        '1728w': 'https://image01.oneplus.cn/shop/201805/21/447/ccdf4f7e47999edc401c8d840f9d3703.png',
+        '1920w': 'https://image01.oneplus.cn/shop/201805/21/447/ccdf4f7e47999edc401c8d840f9d3703.png',
+        '3840w': 'https://image01.oneplus.cn/shop/201805/21/447/ccdf4f7e47999edc401c8d840f9d3703.png'
+      },
+      designWhite: {
+        '408w': 'https://image01.oneplus.cn/shop/201805/30/1263/7a1f90513f8f13a7f4b849b453c2948f.jpg',
+        '816w': 'https://image01.oneplus.cn/shop/201805/30/1263/7a1f90513f8f13a7f4b849b453c2948f.jpg',
+        '864w': 'https://image01.oneplus.cn/shop/201805/31/746/e57abb5ea80f6118673f62bc1b02ecaa.jpg',
+        '1368w': 'https://image01.oneplus.cn/shop/201805/31/746/e57abb5ea80f6118673f62bc1b02ecaa.jpg',
+        '1728w': 'https://image01.oneplus.cn/shop/201805/31/746/e57abb5ea80f6118673f62bc1b02ecaa.jpg',
+        '1920w': 'https://image01.oneplus.cn/shop/201805/31/746/e57abb5ea80f6118673f62bc1b02ecaa.jpg',
+        '3840w': 'https://image01.oneplus.cn/shop/201805/31/1879/16f77912727f025691e7ce481db6281b.jpg'
+      },
+      designRed: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/design_red_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/design_red_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/design_red_1920.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/design_red_1920.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/design_red_1920.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/design_red_1920.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/design_red_3840.jpg'
+      },
+      video: {
+        '408w': 'https://image01.oneplus.cn/shop/201806/30/1672/644866bf966c15c567585db202330c13.png',
+        '816w': 'https://image01.oneplus.cn/shop/201806/30/1672/644866bf966c15c567585db202330c13.png',
+        '864w': 'https://image01.oneplus.cn/shop/201806/30/422/11467679c60c2916517a7848c19ffa7c.jpg',
+        '1368w': 'https://image01.oneplus.cn/shop/201806/30/422/11467679c60c2916517a7848c19ffa7c.jpg',
+        '1728w': 'https://image01.oneplus.cn/shop/201806/30/422/11467679c60c2916517a7848c19ffa7c.jpg',
+        '1920w': 'https://image01.oneplus.cn/shop/201806/30/422/11467679c60c2916517a7848c19ffa7c.jpg',
+        '3840w': 'https://image01.oneplus.cn/shop/201806/30/422/11467679c60c2916517a7848c19ffa7c.jpg'
+      },
+      avengers: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/star_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/star_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/star.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/star.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/star.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/star.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/star_3840.jpg'
+      },
+      water: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water_3840.jpg'
+      },
+      bullets: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/bullets_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/bullets_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/bullets_1920.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/bullets_1920.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/bullets_1920.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/bullets_1920.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/bullets_3840.jpg'
+      },
+      call: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/call_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/call_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/call.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/call.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/call.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/call.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/call_3840.jpg'
+      },
+      games: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/games_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/games_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/games.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/games.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/games.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/games.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/games_3840.jpg'
+      },
+      app: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/app.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/app.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/app.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/app.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/fast/app.jpg'
+      },
+      gpu: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/blur_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/blur_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/blur.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/blur.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/blur.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/blur.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/fast/blur.jpg'
+      },
+      face: {
+        '408w': 'https://image01.oneplus.cn/shop/201805/24/393/d479dc92aa8c6e42906a7548825757f4.jpg',
+        '816w': 'https://image01.oneplus.cn/shop/201805/24/393/d479dc92aa8c6e42906a7548825757f4.jpg',
+        '864w': 'https://image01.oneplus.cn/shop/201805/24/1069/cf4dc5ca0e6a4502b7444537ebff2ff8.jpg',
+        '1368w': 'https://image01.oneplus.cn/shop/201805/24/1069/cf4dc5ca0e6a4502b7444537ebff2ff8.jpg',
+        '1728w': 'https://image01.oneplus.cn/shop/201805/24/1069/cf4dc5ca0e6a4502b7444537ebff2ff8.jpg',
+        '1920w': 'https://image01.oneplus.cn/shop/201805/24/1069/cf4dc5ca0e6a4502b7444537ebff2ff8.jpg',
+        '3840w': 'https://image01.oneplus.cn/shop/201805/24/42/179acf1a2c8c6238dc7a80d7c24db14b.jpg'
+      },
+      ski: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/05_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/05_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/05.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/05.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/05.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/05.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/05.jpg'
+      },
+      waterSurface: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/water_surface.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/water_surface.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/water_surface.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/water_surface.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/water_surface.jpg'
+      },
+      car: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/yepai_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/yepai_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/yepai.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/yepai.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/yepai.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/yepai.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/yepai_3840.jpg'
+      },
+      portraits: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/renxiang_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/renxiang_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/renxiang.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/renxiang.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/renxiang.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/renxiang.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/renxiang_3840.jpg'
+      },
+      aiCamera: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/ai_camera_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/ai_camera_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/ai_camera.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/ai_camera.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/ai_camera.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/ai_camera.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/ai_camera.jpg'
+      },
+      playBall: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/06_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/06_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/06.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/06.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/06.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/06.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/06.jpg'
+      },
+      cave: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/07_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/07_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/07.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/07.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/07.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/07.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/camera/07.jpg'
+      },
+      totalView: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/screen/total_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/screen/total_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/screen/total.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/screen/total.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/screen/total.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/screen/total.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/screen/total.jpg'
+      },
+      gesture: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/screen/gesture_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/screen/gesture_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/screen/gesture.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/screen/gesture.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/screen/gesture.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/screen/gesture.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/cn/screen/gesture_3840.jpg'
+      },
+      familiar: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/water_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/familiar.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/familiar.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/familiar.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/familiar.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/familiar.jpg'
+      },
+      red: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/red_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/red_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/red_1920.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/red_1920.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/red_1920.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/red_1920.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/design/red_3840.jpg'
+      },
+      rain: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/weather/rain_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/weather/rain_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/weather/rain.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/weather/rain.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/weather/rain.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/weather/rain.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/weather/rain_3840.jpg'
+      },
+      lag: {
+        '408w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/os/less_lag_640.jpg',
+        '816w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/os/less_lag_640.jpg',
+        '864w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/os/less_lag.jpg',
+        '1368w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/os/less_lag.jpg',
+        '1728w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/os/less_lag.jpg',
+        '1920w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/os/less_lag.jpg',
+        '3840w': 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/detail/os/less_lag_3840.jpg'
+      },
+      osShow: {
+        '408w': 'https://image01.oneplus.cn/shop/201805/17/127/4e9f450332fac39d0b59625163a6ab36.png',
+        '816w': 'https://image01.oneplus.cn/shop/201805/17/127/4e9f450332fac39d0b59625163a6ab36.png',
+        '864w': 'https://image01.oneplus.cn/shop/201805/17/543/021f705bbb6edecc2bc95d86bad2ed5b.png',
+        '1368w': 'https://image01.oneplus.cn/shop/201805/17/543/021f705bbb6edecc2bc95d86bad2ed5b.png',
+        '1728w': 'https://image01.oneplus.cn/shop/201805/17/543/021f705bbb6edecc2bc95d86bad2ed5b.png',
+        '1920w': 'https://image01.oneplus.cn/shop/201805/17/543/021f705bbb6edecc2bc95d86bad2ed5b.png',
+        '3840w': 'https://image01.oneplus.cn/shop/201805/17/292/1894c2b5ff965593c2bb04fc16fc43fd.png'
+      }
+    },
+    videoList: [
+      'https://statics.oneplus.cn/ov/assets/images/events/2018/819/source/cn/adaptive_mode.mp4',
+      'https://statics.oneplus.cn/ov/assets/images/events/2018/819/source/cn/reading_mode.mp4',
+      'https://statics.oneplus.cn/ov/assets/images/events/2018/819/source/cn/night_mode.mp4',
+      'https://statics.oneplus.cn/ov/assets/images/events/2018/819/source/cn/s_rgb_dci.mp4'
+    ],
+    slowerVideo: 'https://statics.oneplus.cn/ov/assets/images/events/2018/819/source/slower_video.mp4',
+    sections: {
+      fast: { index: 1, name: 'fast', className: 'fast-detail' },
+      display: { index: 2, name: 'display', className: 'display-detail' },
+      camera: { index: 3, name: 'camera', className: 'camera-detail' },
+      design: { index: 4, name: 'design', className: 'design-detail' },
+      weather: { index: 5, name: 'weather', className: 'weather-detail' },
+      os: { index: 6, name: 'os', className: 'os-detail' }
+    },
+    lastPageNum: 6,
+    videoSources: {
+      'video_01': 'XMzYwODM0MDU4NA==',
+      'video_02': 'XMzY5ODIzODQ0NA==',
+      'video_03': 'XMzYzODkzOTgwMA=='
+    },
+    videoOptions: {
+      size: {
+        width: 640,
+        height: 360
+      }
+    },
+    backgroundY: {
+      bullets: {
+        lg: -300,
+        md: -400,
+        sm: -300,
+        xs: -100
+      },
+      designWhite: {
+        lg: -800,
+        md: -1000,
+        sm: -600,
+        xs: -300
+      },
+      designRed: {
+        lg: -300,
+        md: -400,
+        sm: -300,
+        xs: -100
+      }
+    },
+    imageY: {
+      avengers: {
+        lg: -500,
+        md: -400,
+        sm: -300,
+        xs: -200
+      }
+    },
+    pxOptions: {
+      video: {
+        lg: {
+          speed: 0.9,
+          offset: 0
+        },
+        md: {
+          speed: 0.9,
+          offset: 0
+        },
+        sm: {
+          speed: 0.6,
+          offset: 150
+        },
+        xs: {
+          speed: 0.3,
+          offset: 200
+        }
+      },
+      display: {
+        lg: {
+          speed: 0.7,
+          offset: -300,
+          imgSpeed: 0.9,
+          imgOffset: 300
+        },
+        md: {
+          speed: 0.7,
+          offset: -300,
+          imgSpeed: 0.9,
+          imgOffset: 300
+        },
+        sm: {
+          speed: 0.7,
+          offset: -300,
+          imgSpeed: 0.9,
+          imgOffset: 300
+        },
+        xs: {
+          speed: 0.7,
+          offset: -200,
+          imgSpeed: 0.4,
+          imgOffset: 100
+        }
+      },
+      gesture: {
+        lg: {
+          speed: 0.7,
+          offset: 0
+        },
+        md: {
+          speed: 0.7,
+          offset: -100
+        },
+        sm: {
+          speed: 0.7,
+          offset: -300
+        },
+        xs: {
+          speed: 0.7,
+          offset: -100
+        }
+      },
+      car: {
+        lg: {
+          speed: 0.7,
+          offset: 300,
+          imgSpeed: 0.9,
+          imgOffset: 200
+        },
+        md: {
+          speed: 0.7,
+          offset: 300,
+          imgSpeed: 0.9,
+          imgOffset: 300
+        },
+        sm: {
+          speed: 0.7,
+          offset: 300,
+          imgSpeed: 0.9,
+          imgOffset: 300
+        },
+        xs: {
+          speed: 0.7,
+          offset: 100,
+          imgSpeed: 0.9,
+          imgOffset: 100
+        }
+      },
+      full: {
+        lg: {
+          speed: 0.7,
+          offset: -100,
+          imgSpeed: 0.9,
+          imgOffset: 200
+        },
+        md: {
+          speed: 0.7,
+          offset: -100,
+          imgSpeed: 0.9,
+          imgOffset: 300
+        },
+        sm: {
+          speed: 0.7,
+          offset: 300,
+          imgSpeed: 0.9,
+          imgOffset: -800
+        },
+        xs: {
+          speed: 0.7,
+          offset: -300,
+          imgSpeed: 0.9,
+          imgOffset: 100
+        }
+      },
+      designPhone: {
+        lg: {
+          speed: 0.9,
+          offset: 0,
+          imgSpeed: 1,
+          imgOffset: 0
+        },
+        md: {
+          speed: 0.6,
+          offset: 0,
+          imgSpeed: 1.2,
+          imgOffset: 0
+        },
+        sm: {
+          speed: 0.6,
+          offset: 0,
+          imgSpeed: 1.2,
+          imgOffset: 100
+        },
+        xs: {
+          speed: 0.6,
+          offset: 0,
+          imgSpeed: 1.2,
+          imgOffset: 0
+        }
+      },
+      designWhite: {
+        lg: {
+          speed: 0.9,
+          offset: 700
+        },
+        md: {
+          speed: 0.6,
+          offset: 900
+        },
+        sm: {
+          speed: 0.6,
+          offset: 400
+        },
+        xs: {
+          speed: 0.6,
+          offset: 200
+        }
+      },
+      designRed: {
+        lg: {
+          speed: 0.9,
+          offset: -200
+        },
+        md: {
+          speed: 0.6,
+          offset: -300
+        },
+        sm: {
+          speed: 0.6,
+          offset: -200
+        },
+        xs: {
+          speed: 0.8,
+          offset: -300
+        }
+      },
+      familiar: {
+        lg: {
+          speed: 0.7,
+          offset: -300,
+          imgSpeed: 0.9,
+          imgOffset: -100
+        },
+        md: {
+          speed: 0.7,
+          offset: -300,
+          imgSpeed: 0.9,
+          imgOffset: -100
+        },
+        sm: {
+          speed: 0.7,
+          offset: -300,
+          imgSpeed: 0.9,
+          imgOffset: -300
+        },
+        xs: {
+          speed: 0.7,
+          offset: -200,
+          imgSpeed: 0.4,
+          imgOffset: 0
+        }
+      },
+      avengers: {
+        lg: {
+          speed: 0.7,
+          offset: 300,
+          imgSpeed: 0.9,
+          imgOffset: 1000
+        },
+        md: {
+          speed: 0.7,
+          offset: 300,
+          imgSpeed: 0.9,
+          imgOffset: 1000
+        },
+        sm: {
+          speed: 0.5,
+          offset: -300,
+          imgSpeed: 0.5,
+          imgOffset: 600
+        },
+        xs: {
+          speed: 0.7,
+          offset: -300,
+          imgSpeed: 0.9,
+          imgOffset: 300
+        }
+      },
+      weather: {
+        lg: {
+          speed: 0.7,
+          offset: 100,
+          imgSpeed: 0.9,
+          imgOffset: 0
+        },
+        md: {
+          speed: 0.7,
+          offset: 0,
+          imgSpeed: 0,
+          imgOffset: 0
+        },
+        sm: {
+          speed: 0.7,
+          offset: 0,
+          imgSpeed: 0,
+          imgOffset: 0
+        },
+        xs: {
+          speed: 0.7,
+          offset: -200,
+          imgSpeed: 0.9,
+          imgOffset: 100
+        }
+      },
+      osShow: {
+        lg: {
+          speed: 0.5,
+          offset: 1000,
+          imgSpeed: 1,
+          imgOffset: -1200
+        },
+        md: {
+          speed: 0.6,
+          offset: 500,
+          imgSpeed: 1,
+          imgOffset: -600
+        },
+        sm: {
+          speed: 0.6,
+          offset: 300,
+          imgSpeed: 0.5,
+          imgOffset: -500
+        },
+        xs: {
+          speed: 0.6,
+          offset: -200,
+          imgSpeed: 0.9,
+          imgOffset: 0
+        }
+      },
+      bullets: {
+        lg: {
+          speed: 0.7,
+          offset: 300,
+          imgSpeed: 0.9,
+          imgOffset: 400
+        },
+        md: {
+          speed: 0.7,
+          offset: 200,
+          imgSpeed: 0.9,
+          imgOffset: 500
+        },
+        sm: {
+          speed: 0.7,
+          offset: 200,
+          imgSpeed: 0.9,
+          imgOffset: 500
+        },
+        xs: {
+          speed: 0.7,
+          offset: -200,
+          imgSpeed: 0.9,
+          imgOffset: 100
+        }
+      }
+    }
+  }
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+      var c_hint_pc = "预约BS01 >>";
+      var c_hint_mobile = "预约BS01 >>";
+      var c_link = "https://www.oneplus.com/cn/6t/reservation?from=ribbon";
+      var c_bg_pc = "https://image01.oneplus.cn/shop/201810/29/979/88a333b85610c582341f878095a1a3fa.jpg";
+      var c_bg_mobile = "https://image01.oneplus.cn/shop/201810/29/1429/0d659b3b034153aad39ab4c608ba67ea.jpg";
+      var $bar = document.querySelector('.notice-ribbon');
+     
+      if($bar){
+         var $text = $bar.querySelector('.notice-content .hidden-xs p');
+         var $textXs = $bar.querySelector('.notice-content .hidden-not-xs p');
+         var $content= $bar.querySelector('.notice-content');
+         var $pcBg= $bar.querySelector('.container-bg .pc-bg');
+         var $mobileBg= $bar.querySelector('.container-bg .mobile-bg');
+         $text.innerHTML = c_hint_pc ;
+         $textXs.innerHTML = c_hint_mobile ;
+         $content.setAttribute('data-url',c_link);
+         $pcBg.setAttribute('src',c_bg_pc);
+         $mobileBg.setAttribute('src',c_bg_mobile);
+       }
+    });
+</script>
+
+<div id="page-footer">
+  <!-- <section class="our-promises" id="our-promises">
+    <div class="container-text">
+      <div class="margin-2x"></div>
+      <div class="row text-center">
+        <div class="col-xs-6 col-sm-3 col-md-3 badge-container">
+          <figure class="promise-badge text-center">
+            <a href="https://service.oneplus.com/cn/faq?knowledgeId=A300000227" class="promise-badge-link"><img src="https://image01.oneplus.cn/shop/201804/04/1159/52a72a18413191228de05b965a4f0a5d.png" alt="7天无理由退货" class="badge-figure" target="_blank" onclick="_opq.push(['trackEvent','onepluscn_A92','7天无理由退货'])"></a>
+            <figurecaption class="badge-caption text-gray stretched">7天无理由退货</figurecaption>
+          </figure>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3 badge-container">
+          <figure class="promise-badge text-center">
+            <a href="https://service.oneplus.com/cn/faq?knowledgeId=A300000228" target="_blank" onclick="_opq.push(['trackEvent','onepluscn_A93','15天退货保障'])" class="promise-badge-link"><img src="https://image01.oneplus.cn/shop/201804/04/703/684f626699a71a011058439c670d0f67.png" alt="15天退货保障" class="badge-figure"></a>
+            <figurecaption class="badge-caption text-gray stretched">15天退货保障</figurecaption>
+          </figure>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3 badge-container">
+          <figure class="promise-badge text-center">
+            <a href="https://service.oneplus.com/cn/faq?knowledgeId=A300000229" target="_blank" onclick="_opq.push(['trackEvent','onepluscn_A94','30天换货保障'])" class="promise-badge-link"><img src="https://image01.oneplus.cn/shop/201804/04/946/22f2df85592ec0c1894663bff4e308e3.png" alt="30天换货保障" class="badge-figure"></a>
+            <figurecaption class="badge-caption text-gray stretched">30天换货保障</figurecaption>
+          </figure>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-3 badge-container">
+          <figure class="promise-badge text-center">
+            <a href="https://service.oneplus.com/cn/faq?knowledgeId=A100000031" target="_blank" onclick="_opq.push(['trackEvent','onepluscn_A95','99元全场包邮'])" class="promise-badge-link"><img src="https://image01.oneplus.cn/shop/201804/04/1523/2533f3f64fc3a177810195376f1d78b4.png" alt="99元全场包邮" class="badge-figure"></a>
+            <figurecaption class="badge-caption text-gray stretched">99元全场包邮</figurecaption>
+          </figure>
+        </div>
+      </div>
+      <div class="margin-2x"></div>
+    </div>
+  </section> -->
+  
+</div>
+
+<script>
+  (function () {
+    function getCookie(name) {
+      var value = "; " + document.cookie;
+      var parts = value.split("; " + name + "=");
+      if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+
+    if (document.getElementById('foo-service-chat-for-sobot')) {
+      var el = document.getElementById('foo-service-chat-for-sobot'),
+        userName = getCookie('opnickname'),
+        email = getCookie('opuseremail'),
+        phone = getCookie('opuserphone'),
+        url = el.getAttribute('href');
+
+      if (userName) {
+        url += '&uname=' + userName;
+      }
+      if (email && email != "" && email != "\"\"") {
+        url += '&email=' + email;
+      }
+      if (phone && phone != "" && phone != "\"\"") {
+        url += '&tel=' + phone;
+      }
+
+      el.setAttribute('href', url);
+    }
+
+    /*判断是否为webview*/
+    var isWebView = getCookie('analytics_from_flag') || '';
+    if (isWebView === 'app_webview' || typeof window.COMMUNITY_APP_ACCOUNT !== 'undefined') {
+      /*隐藏论坛*/
+      var nav = document.getElementById('nav-pages-slide');
+      if (nav) {
+        var closeInWebview = nav.querySelectorAll(".page");
+        for (var i = 0; i < closeInWebview.length; i++) {
+          var navText = closeInWebview[i].getElementsByTagName('a');
+          if (navText[0].innerHTML == '论坛') {
+            closeInWebview[i].style.display = 'none';
+          }
+        }
+      }
+      /*隐藏国家选项*/
+      var currentStore = document.querySelectorAll('.current-store');
+      if (currentStore.length>0) currentStore[0].style.display = 'none';
+      /*隐藏退出登录*/
+      var logout = document.querySelectorAll('.logout');
+      if (logout.length>0) logout[0].style.display = 'none';
+    }
+
+    window.COMMUNITY_APP_BACK = function(){
+      history.back();
+    }
+  })();
+</script>
+
+
+
+<script type="text/javascript" src="./product_files/vendor.js.下载"></script>
+<script type="text/javascript" src="./product_files/index.js.下载"></script>
+
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var a = document.createElement("script");
+    a.type = "text/javascript";
+    a.async = true;
+    a.src = "https://analytics.oneplus.cn/opdcV2.min.js?20190319065511";
+    var b = document.getElementsByTagName("script")[0x0];
+    b.parentNode.insertBefore(a, b);
+
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?3a59d601a13580387971f58e07f89889";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+</body></html>

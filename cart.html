@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+	<meta name="twitter:widgets:theme" content="light">
+	<meta property="og:title" content="Your-Title-Here" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="Your-Image-Url" />
+	<meta property="og:description" content="Your-Page-Description" />
+	<title>BlackSheep - Cart</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/blacksheep-favicon.ico">
+
+	<!-- Font -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CLato:300,400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Css -->
+	<link rel="stylesheet" href="css/core.min.css" />
+	<link rel="stylesheet" href="css/blacksheep.css" />
+
+	<!--[if lt IE 9]>
+    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="shop cart">
+
+	<!-- Side Navigation Menu -->
+	<aside class="side-navigation-wrapper enter-right" data-no-scrollbar data-animation="push-in">
+		<div class="side-navigation-scroll-pane">
+			<div class="side-navigation-inner">
+				<div class="side-navigation-header">
+					<div class="navigation-hide side-nav-hide">
+						<a href="#">
+							<span class="icon-cancel medium"></span>
+						</a>
+					</div>
+				</div>
+				<nav class="side-navigation nav-block">
+					<ul>
+						<li>
+							<a href="#" class="contains-sub-menu">BS01</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="Home-page.html" class="contains-sub-menu">Mobile</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="Home-page.html">BS01</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="contains-sub-menu">Pages</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="index">About BlackSheep</a>
+								</li>
+								<li>
+									<a href="about-style-two.html">Services</a>
+								</li>
+								<li>
+									<a href="about-style-three.html">Contact</a>
+								</li>
+								<li>
+									<a href="404.html">404</a>
+								</li>
+								<li>
+									<a href="500.html">500</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="contains-sub-menu">Shop</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="single-product.html">Product</a>
+								</li>
+								<li class="current">
+									<a href="cart.html">Cart</a>
+								</li>
+								<li>
+									<a href="checkout.html">Checkout</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<nav class="side-navigation nav-block">
+					<ul>
+						<li>
+							<a href="#" class="contains-sub-menu cart">Cart <span class="cart-indication"><span class="badge">1</span></span></a>
+							<ul class="sub-menu custom-content cart-overview">
+								<li class="cart-item">
+									<a href="single-product.html" class="product-thumbnail">
+										<img src="images/design-agency/portfolio/grid/no-margins/project-6-square.jpg" alt="" />
+									</a>
+									<div class="product-details">
+										<a href="#" class="blacksheep">
+											BS01
+										</a>
+										<span class="product-quantity">1 x</span>
+										<span class="product-price"><span class="currency">$</span>646.00</span>
+										<a href="#" class="product-remove icon-cancel"></a>
+									</div>
+								</li>
+								<li class="cart-item">
+									<a href="single-product.html" class="product-thumbnail">
+										<img src="images/design-agency/portfolio/grid/no-margins/project-7-square.jpg" alt="" />
+									</a>
+									<div class="product-details">
+										<a href="#" class="product-title">
+											BS01
+										</a>
+								<li class="cart-actions">
+									<a href="cart.html" class="view-cart">View Cart</a>
+									<a href="checkout.html" class="checkout"><span class="icon-check"></span> Checkout</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="contains-sub-menu">Search</a>
+							<ul class="sub-menu custom-content">
+								<li>
+									<div class="search-form-container site-search">
+										<form action="#" method="get" novalidate>
+											<div class="field-wrapper">
+												<input type="text" name="search" class="form-search form-element no-margin-bottom" placeholder="type &amp; hit enter...">
+											</div>
+										</form>
+										<div class="form-response"></div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="side-navigation-footer">
+					<p class="copyright no-margin-bottom">&copy; 2019 BLACKSHEEP.</p>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<!-- Side Navigation Menu End -->
+
+	<div class="wrapper reveal-side-navigation">
+		<div class="wrapper-inner">
+
+			<!-- Header -->
+			<header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100" data-compact-threshold="100">
+				<div class="header-inner">
+					<div class="row nav-bar">
+						<div class="column width-12 nav-bar-inner">
+							<div class="logo">
+								<div class="logo-inner">
+									<a href="index.html"><img src="images/blacksheep/logo-dark.png" alt="blacksheep Logo" /></a>
+									<a href="index.html"><img src="images/blacksheep/logo.png" alt="blacksheep Logo" /></a>
+								</div>
+							</div>
+							<nav class="navigation nav-block secondary-navigation nav-right">
+								<ul>
+									<li>
+										<!-- Dropdown Cart Overview -->
+										<div class="dropdown">
+											<a href="#" class="nav-icon cart button no-page-fade"><span class="cart-indication"><span class="icon-shopping-cart"></span> <span class="badge">3</span></span></a>
+											<ul class="dropdown-list custom-content cart-overview">
+												<li class="cart-item">
+													<a href="single-product.html" class="product-thumbnail">
+														<img src="images/shop/cart/cart-thumb-small.jpg" alt="" />
+													</a>
+													<div class="product-details">
+														<a href="single-product.html" class="product-title">
+															BlackSheep
+														</a>
+														<span class="product-quantity">1 x</span>
+														<span class="product-price"><span class="currency">$</span>646.00</span>
+														<a href="#" class="product-remove icon-cancel"></a>
+													</div>
+												</li>
+												<li class="cart-subtotal">
+													Sub Total
+													<span class="amount"><span class="currency">$</span>77.00</span>
+												</li>
+												<li class="cart-actions">
+													<a href="cart.html" class="view-cart mt-10">View Cart</a>
+													<a href="checkout.html" class="checkout button small"><span class="icon-check"></span> Checkout</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<!-- Dropdown Search Module -->
+										<div class="dropdown">
+											<a href="#" class="nav-icon search button no-page-fade"><span class="icon-magnifying-glass"></span></a>
+											<div class="dropdown-list custom-content cart-overview">
+												<div class="search-form-container site-search">
+													<form action="#" method="get" novalidate>
+														<div class="row">
+															<div class="column width-12">
+																<div class="field-wrapper">
+																	<input type="text" name="search" class="form-search form-element no-margin-bottom" placeholder="type &amp; hit enter...">
+																	<span class="border"></span>
+																</div>
+															</div>
+														</div>
+													</form>
+													<div class="form-response"></div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="aux-navigation hide">
+										<!-- Aux Navigation -->
+										<a href="#" class="navigation-show side-nav-show nav-icon">
+											<span class="icon-menu"></span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="navigation nav-block primary-navigation sub-menu-indicator nav-right no-margin-right">
+								<ul>
+									<li class="current contains-sub-menu">
+										<a href="index.html">Home</a>
+										<ul class="sub-menu">
+											<li class="contains-sub-menu">
+												<a href="Home-page.html">OUR BRAND</a>
+											</li>
+										</ul>
+									</li>
+									<li class="contains-sub-menu">
+										<a href="index.html">MOBILE</a>
+										<ul class="sub-menu">
+											<li>
+												<a href="index.html">BS01</a>
+											</li>
+										</ul>
+									</li>
+									<li class="contains-sub-menu">
+										<a href="our-community.html">SUPPORT</a>
+										<ul class="sub-menu">
+											<li>
+												<a href="our-community.html">our community</a>
+											</li>
+										</ul>
+									</li>
+									<li class="contains-sub-menu sub-menu-right">
+										<a href="shop-grid.html">Shop</a>
+										<ul class="sub-menu">
+												<ul class="sub-menu">
+													<li>
+														<a href="shop-grid.html">BS01</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="cart.html">Cart</a>
+											</li>
+											<li>
+												<a href="checkout.html">Checkout</a>
+											</li>
+										</ul>
+									</li>
+									<li class="contains-mega-sub-menu">
+										<a href="portfolio-three-columns.html">CONTACT US</a>
+										<ul class="mega-sub-menu">
+											<li>
+												<a href="portfolio-three-columns.html">Call: +86 133 3333 3333</a>
+											</li>
+											<li>
+												<a href="mailto:info@blacksheep.com">email blacksheep</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- Header End -->
+
+			<!-- Content -->
+			<div class="content clearfix">
+
+				<!-- Intro Title Section 2 -->
+				<div class="section-block intro-title-2 intro-title-2-3">
+					<div class="row">
+						<div class="column width-12">
+							<div class="title-container">
+								<div class="title-container-inner center">
+									<h1 class="inline no-margin-bottom">Review Your Cart</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Intro Title Section 2 End -->
+
+				<!-- Cart Overview -->
+				<div class="section-block cart-overview">
+					<div class="row">
+						<div class="column width-12">
+							<div class="cart-review">
+								<table class="table non-responsive">
+									<thead>
+										<tr>
+											<th class="product-remove"></th>
+											<th class="product-thumbnail"></th>
+											<th class="product-name">Name</th>
+											<th class="product-price">Price</th>
+											<th class="product-quantity">Quantity</th>
+											<th class="product-subtotal">Total</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="cart-item">
+											<td class="product-remove center">
+												<a href="#" class="product-remove icon-cancel"></a>
+											</td>
+											<td class="product-thumbnail">
+												<a href="#">
+													<img src="images/cart/cart-thumb-large.jpg" alt="" />
+												</a>
+											</td>
+											<td class="product-name">
+												<a href="" class="product-title">BS01</a>
+											</td>
+											<td class="product-price">
+												<span class="amount">$646.00</span>
+											</td>
+										</tr>
+										<tr class="cart-actions left-on-mobile">
+											<td colspan="6">
+												<div class="cart-coupon-form-container">
+													<form class="cart-coupon-form clear-float-on-mobile" action="#" method="post" novalidate>
+														<input type="text" class="form-element" placeholder="Coupon Code">
+														<input type="submit" value="Apply" class="form-submit button mb-30">
+													</form>
+												</div>
+												<button class="button update-cart clear-float-on-mobile mb-30">Update Cart</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="cart-totals">
+								<h5 class="mb-30">Cart Totals</h5>
+								<table class="table non-responsive">
+									<tbody>
+										<tr class="cart-subtotal">
+											<th>Subtotal</th>
+											<td><span class="amount">$646.00</span></td>
+										</tr>
+										<tr class="cart-order-total">
+											<th>Total</th>
+											<td><span class="amount">$646.00</span></td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="cart-actions right clear-float-on-mobile left-on-mobile">
+									<a href="checkout.html" class="button checkout no-margin-bottom fade-location">Proceed to Checkout</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Cart Overview End -->
+
+			</div>
+			<!-- Content End -->
+
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="footer-top">
+					<div class="row flex">
+						<div class="column width-6">
+							<div class="widget">
+								<h4 class="widget-title">Get Notified</h4>
+								<p>Want to be notified when we launch a new Product. Just sign up and we'll send you a notification by email.</p>
+								<div class="signup-form-container">
+									<form class="signup-form" action="php/subscribe.php" method="post" novalidate>
+										<div class="row">
+											<div class="column width-8">
+												<div class="field-wrapper">
+													<input type="email" name="email" class="form-email form-element" placeholder="Email address" tabindex="2" required>
+												</div>
+											</div>
+											<div class="column width-4">
+												<input type="submit" value="Signup" class="form-submit button border-grey bkg-hover-grey color-white color-hover-white">
+											</div>
+										</div>
+										<input type="text" name="honeypot" class="form-honeypot form-element">
+									</form>
+									<div class="form-response show"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="row">
+						<div class="column width-12">
+							<div class="footer-bottom-inner center">
+								<p class="copyright pull-left clear-float-on-mobile">
+									&copy; BLACKSHEEP. All Rights Reserved. <a href="#">Terms & Conditions</a> | <a href="#">Cookie policy</a>
+								</p>
+								<ul class="social-list list-horizontal pull-right clear-float-on-mobile">
+									<li><a href="#"><span class="icon-instagram small"></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer End -->
+
+		</div>
+	</div>
+
+	<!-- Js -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/timber.master.min.js"></script>
+</body>
+</html>
